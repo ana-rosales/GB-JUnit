@@ -84,14 +84,14 @@ public class DateValidator {
                     valida = false;
                     System.out.println("Dia inválido.");
                 }
+            }  else if (esBisiesto(anio)){
+                if(dia <1 || dia > 29){
+                System.out.println("Dia invalido es año bisiesto.");
+                }
             } else if (mes == 2) {
                 if (dia < 1 || dia > 28) {
                     valida = false;
                     System.out.println("Dia inválido.");
-                }
-            } else if (esBisiesto(anio)){
-                if(dia <1 || dia > 29){
-                System.out.println("Dia invalido es año bisiesto.");
                 }
             } else {
                 if (dia < 1 || dia > 30) {
